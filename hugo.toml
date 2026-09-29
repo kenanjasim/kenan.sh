@@ -48,8 +48,8 @@ homeIntroTitle = 'Hello! 👋'
 homeIntroContent = """
 💚 empathy · nerd · overthinker
 
-This is where I write about whatever I can't stop thinking about: Go, networks, security,
-and the odd thing that has nothing to do with computers at all.
+This is where I write down the things I've been overthinking, in the hope that it makes me
+stop. Mostly Go, networks and security, usually with more confidence than is strictly warranted.
 
 More about me [over here](/about). If you're after the grown-up version, [my work lives
 on kenanjasim.com](https://kenanjasim.com/). Otherwise, scroll down and have a poke around.
