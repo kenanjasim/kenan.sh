@@ -1,4 +1,4 @@
-baseURL = 'https://kenanjasim.com/'
+baseURL = 'https://kenan.sh/'
 locale = 'en-gb'
 title = 'Kenan Jasim'
 theme = "typo"
@@ -17,7 +17,7 @@ tag = 'tags'
 
 [params]
 # Meta description
-description = "Kenan Jasim's personal blog"
+description = "engineer, but make it diabetic. Kenan Jasim writes about code, networks and whatever he's overthinking this week."
 
 # Appearance settings
 theme = 'auto'
@@ -35,8 +35,9 @@ profileImageAlt = 'images/90s.jpg'
 
 # Little profile card under the homepage picture
 profileName = 'Kenan Jasim'
-profileRole = 'Software Engineer @ <a href="https://aalyria.com" target="_blank" rel="noopener">Aalyria</a>'
-profileMeta = 'he/him · London 🇬🇧🇱🇧🇮🇶'
+profileRole = 'engineer, but make it diabetic'
+# flags are joined with invisible U+2060 word joiners so they stay on one line
+profileMeta = 'he/him · 📍 london · 🇬🇧⁠🇱🇧⁠🇮🇶'
 
 # Your Nightscout site URL, e.g. 'https://kenan-cgm.up.railway.app'
 # When set, a live blood-sugar reading shows on the About page. Leave empty to hide it.
@@ -45,10 +46,13 @@ nightscoutUrl = 'https://nightscout.kenanjasim.com'
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hello! 👋'
 homeIntroContent = """
-I'm a software engineer with a background in electronic engineering.
+💚 empathy · nerd · overthinker
 
-[Check out the about page](/about) to learn more about me, take a look at my [CV](https://kenanjasim.github.io/cv/cv.pdf), or scroll down for the things I've written. 
-Thanks for stopping by 💚
+This is where I write down the things I've been overthinking, in the hope that it makes me
+stop.
+
+More about me [over here](/about). If you're after the grown-up version, [my work lives
+on kenanjasim.com](https://kenanjasim.com/). Otherwise, scroll down and have a poke around.
 """
 
 # Collection to display on home
@@ -82,7 +86,7 @@ url = "https://www.strava.com/athletes/97755215"
 
 [[params.social]]
 name = "email"
-url = "mailto:kenan@kenanjasim.com"
+url = "mailto:me@kenan.sh"
 
 [[params.social]]
 name = "rss"
@@ -101,9 +105,10 @@ url = "/posts"
 name = "about"
 url = "/about"
 
+# Portfolio / CV lives on its own site
 [[params.menu]]
-name = "travel"
-url = "/travel"
+name = "work"
+url = "https://kenanjasim.com/"
 
 # Image processing quality (avatars etc.)
 [imaging]

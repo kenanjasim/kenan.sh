@@ -1,14 +1,10 @@
-{{/* Travel map — colours visited countries (from data/travel.yaml) in the site accent */}}
+{{/* Travel map with a list of visited countries beside it (from data/travel.yaml) */}}
 
 {{ $countries := sort hugo.Data.travel "name" }}
 {{ $codes := slice }}
 {{ range $countries }}{{ $codes = $codes | append .code }}{{ end }}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/jsvectormap.min.css">
-
-<div id="travel-map" class="travel-map" role="img" aria-label="World map with countries I've visited highlighted"></div>
-
-<p class="travel-count">🌍 {{ len $countries }} countries and counting</p>
 
 {{/* Regional-indicator codepoints A–Z, for building flag emoji from a country code */}}
 {{ $ri := dict
@@ -17,87 +13,16 @@
   "O" 127476 "P" 127477 "Q" 127478 "R" 127479 "S" 127480 "T" 127481 "U" 127482
   "V" 127483 "W" 127484 "X" 127485 "Y" 127486 "Z" 127487 }}
 
-<div class="travel-grid">
-  {{ range $countries }}
-  {{ $code := upper .code }}
-  {{ $name := .name }}
-  {{ $c1 := substr $code 0 1 }}
-  {{ $c2 := substr $code 1 1 }}
-  {{ $flag := printf "%c%c" (index $ri $c1) (index $ri $c2) }}
-  <div class="travel-card" role="button" tabindex="0"
-       data-name="{{ $name }}" data-flag="{{ $flag }}"
-       data-note="{{ with .note }}{{ . }}{{ end }}"
-       data-image="{{ with .image }}{{ . }}{{ end }}"
-       aria-label="Open details for {{ $name }}">
-    {{ with .image }}<img class="travel-card-img" src="{{ . }}" alt="{{ $name }}" loading="lazy">{{ end }}
-    <div class="travel-card-head">
-      <span class="travel-flag" aria-hidden="true">{{ $flag }}</span>
-      <span class="travel-name">{{ $name }}</span>
-    </div>
-    {{ with .note }}<p class="travel-note">{{ . }}</p>{{ end }}
-  </div>
-  {{ end }}
+<div class="travel-layout">
+  <div id="travel-map" class="travel-map" role="img" aria-label="World map with countries I've visited highlighted"></div>
+
+  <ul class="travel-list" aria-label="Countries I've visited">
+    {{ range $countries }}
+    {{ $code := upper .code }}
+    <li><span class="travel-flag" aria-hidden="true">{{ printf "%c%c" (index $ri (substr $code 0 1)) (index $ri (substr $code 1 1)) }}</span> {{ .name }}</li>
+    {{ end }}
+  </ul>
 </div>
-
-{{/* Lightbox for country details */}}
-<div id="travel-modal" class="travel-modal" hidden>
-  <div class="travel-modal-backdrop"></div>
-  <div class="travel-modal-content" role="dialog" aria-modal="true" aria-labelledby="travel-modal-name">
-    <button class="travel-modal-close" type="button" aria-label="Close">&times;</button>
-    <img class="travel-modal-img" alt="" hidden>
-    <div class="travel-modal-body">
-      <div class="travel-modal-head">
-        <span class="travel-modal-flag" aria-hidden="true"></span>
-        <h3 class="travel-modal-name" id="travel-modal-name"></h3>
-      </div>
-      <p class="travel-modal-note"></p>
-    </div>
-  </div>
-</div>
-
-<script>
-(function () {
-  var modal = document.getElementById('travel-modal');
-  if (!modal) return;
-  var imgEl = modal.querySelector('.travel-modal-img');
-  var flagEl = modal.querySelector('.travel-modal-flag');
-  var nameEl = modal.querySelector('.travel-modal-name');
-  var noteEl = modal.querySelector('.travel-modal-note');
-
-  function openCard(card) {
-    var name = card.getAttribute('data-name');
-    var note = card.getAttribute('data-note');
-    var image = card.getAttribute('data-image');
-    flagEl.textContent = card.getAttribute('data-flag');
-    nameEl.textContent = name;
-    noteEl.textContent = note || 'No notes on this one yet — a story still to be written.';
-    if (image) {
-      imgEl.src = image; imgEl.alt = name; imgEl.hidden = false;
-    } else {
-      imgEl.hidden = true; imgEl.removeAttribute('src');
-    }
-    modal.hidden = false;
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    modal.hidden = true;
-    document.body.style.overflow = '';
-  }
-
-  document.querySelectorAll('.travel-card').forEach(function (card) {
-    card.addEventListener('click', function () { openCard(card); });
-    card.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCard(card); }
-    });
-  });
-  modal.querySelector('.travel-modal-close').addEventListener('click', closeModal);
-  modal.querySelector('.travel-modal-backdrop').addEventListener('click', closeModal);
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !modal.hidden) closeModal();
-  });
-})();
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/jsvectormap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.6.0/dist/maps/world.js"></script>
@@ -124,20 +49,18 @@
       zoomButtons: true,
       zoomOnScroll: false,
       backgroundColor: 'transparent',
+      // Visited countries are "selected" regions so the library keeps their colour when it
+      // redraws (e.g. on resize); painting them by hand was lost on small screens.
+      regionsSelectable: false,
+      selectedRegions: visited.map(function (code) { return code.toUpperCase(); }),
       regionStyle: {
         initial: {
           fill: cssVar('--map-base', '#d6d0c4'),
           stroke: cssVar('--background', '#f6f1e7'),
           strokeWidth: 0.4
         },
+        selected: { fill: accent },
         hover: { fillOpacity: 0.75 }
-      }
-    });
-    // Colour each visited country directly on its region element.
-    visited.forEach(function (code) {
-      var region = instance.regions[code.toUpperCase()];
-      if (region && region.element) {
-        region.element.setStyle('fill', accent);
       }
     });
   }

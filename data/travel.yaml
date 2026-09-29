@@ -1,9 +1,8 @@
 # Countries I've travelled to.
 #   name  – label shown on the card
 #   code  – ISO 3166-1 alpha-2 code (colours the map + generates the flag emoji)
-#   note  – (optional) a short memory / one-liner shown on the card
-#   image – (optional) path to a photo, e.g. /travel/norway.jpg
-#           put the file in static/travel/ and it'll be served from /travel/<file>
+#   note  – (optional, not currently shown) a short memory / one-liner
+#   image – (optional, not currently shown) path to a photo in static/travel/
 # Codes: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 - name: United Kingdom
@@ -27,3 +26,6 @@
 
 - name: Greece (Santorini)
   code: GR
+
+- name: United States
+  code: US

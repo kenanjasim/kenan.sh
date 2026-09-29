@@ -1,4 +1,6 @@
 +++
+# Unpublished: the map now lives on the About page; /travel/ redirects there
+draft = true
 title = 'Travel'
 description = 'Places I have been lucky enough to visit.'
 hidePagination = true
@@ -11,4 +13,4 @@ recolours if you flip the site between light and dark.
 {{< travelmap >}}
 
 Got a favourite spot from this list, or somewhere I absolutely have to add next?
-[Tell me](mailto:kenan@kenanjasim.com).
+[Tell me](mailto:me@kenan.sh).

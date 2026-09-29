@@ -1,4 +1,6 @@
 +++
+# Unpublished (not kept up to date); /now/ redirects to /about/
+draft = true
 title = 'Now'
 description = "What I'm focused on at the moment."
 hidePagination = true
@@ -6,7 +8,7 @@ hidePagination = true
 
 This is a [now page](https://nownownow.com/about) — a snapshot of what I'm actually
 spending my time on right now, rather than a highlight reel. If it looks out of date,
-[nudge me](mailto:kenan@kenanjasim.com).
+[nudge me](mailto:me@kenan.sh).
 
 _Last updated: 5 July 2026_
 
