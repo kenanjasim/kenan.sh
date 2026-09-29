@@ -2,8 +2,8 @@
 title = 'About'
 summary = 'The human behind the overthinking.'
 hidePagination = true
-# /now and /uses are unpublished; send any old links here instead
-aliases = ['/now/', '/uses/']
+# /now, /uses and /travel are unpublished; send any old links here instead
+aliases = ['/now/', '/uses/', '/travel/']
 +++
 
 <div class="about-hero">
@@ -30,7 +30,7 @@ moment. For my work and CV, head to [kenanjasim.com](https://kenanjasim.com/).
 - 🗣️ **English & Arabic**
 - 💚 **Type 1 diabetic** since I was one
 - 🎓 **Electronic engineering** at King's
-- ✈️ **{{< travelcount >}} countries** so far, [see the map](/travel)
+- ✈️ **{{< travelcount >}} countries** so far, [see the map](#places-ive-been)
 {{< /facts >}}
 
 ### Things I'm into
@@ -41,6 +41,12 @@ moment. For my work and CV, head to [kenanjasim.com](https://kenanjasim.com/).
 - 📚 **Reading:** mostly politics and history. *Between Two Rivers*, *Pity the Nation*, *The Will to Change*
 - ⚽ **Football:** Manchester United fan, for my sins. Still convinced it was better before the 2010s
 {{< /facts >}}
+
+## Places I've been
+
+I love collecting places more than things. Everywhere shaded is somewhere I've set foot.
+
+{{< travelmap >}}
 
 ## Say hi
 

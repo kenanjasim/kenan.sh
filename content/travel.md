@@ -1,4 +1,6 @@
 +++
+# Unpublished: the map now lives on the About page; /travel/ redirects there
+draft = true
 title = 'Travel'
 description = 'Places I have been lucky enough to visit.'
 hidePagination = true

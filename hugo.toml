@@ -105,10 +105,6 @@ url = "/posts"
 name = "about"
 url = "/about"
 
-[[params.menu]]
-name = "travel"
-url = "/travel"
-
 # Portfolio / CV lives on its own site
 [[params.menu]]
 name = "work"
