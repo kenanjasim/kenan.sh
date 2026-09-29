@@ -389,6 +389,13 @@ body.dark .theme-toggle .icon-moon { display: none; }
   background: var(--accent);
   border-radius: 4px;
 }
+/* jsvectormap positions its tooltip from the cursor's viewport (client) coordinates, but its own
+   CSS makes it position:absolute, so once the page is scrolled the tooltip lands in the wrong
+   place and jumps around. Fixed positioning matches the coordinates it uses. */
+.jvm-tooltip {
+  position: fixed !important;
+  pointer-events: none;
+}
 .travel-list {
   list-style: none;
   margin: 0;
