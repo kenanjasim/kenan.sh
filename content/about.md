@@ -62,8 +62,7 @@ Change** (bell hooks) and **Pity the Nation** (Robert Fisk).
 
 ## Say hi
 
-If anything here resonates, or you just want to tell me I'm wrong about football, I'm easy
-to find:
+If you want to say hello (or tell me I'm wrong about football), I'm easy to find:
 
 {{< social >}}
 
