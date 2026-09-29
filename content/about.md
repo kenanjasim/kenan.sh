@@ -1,6 +1,6 @@
 +++
 title = 'About'
-summary = 'The human behind the commits.'
+summary = 'The human behind the overthinking.'
 hidePagination = true
 +++
 
@@ -17,20 +17,21 @@ Tenderness and kindness are not signs of weakness and despair, but manifestation
 <cite>— Kahlil Gibran</cite>
 </blockquote>
 
-**كنان جاسم** — /kiːˈnæn ˈd͡ʒaːsim/. I'm a software engineer, and I got here sideways. I
-studied **electronic engineering** at King's College London and slowly worked out that
-the part I actually enjoyed was the software. A few years on, that's what I do full time.
+**كنان جاسم** — /kiːˈnæn ˈd͡ʒaːsim/. Engineer, but make it diabetic. I got here sideways: I
+studied **electronic engineering** at King's College London, then slowly realised the only
+bit I actually enjoyed was the software. A few years on, that's the whole job.
 
-I was born in the UK, with **Lebanese and Iraqi roots**, and grew up between **English and
-Arabic**. That mix shapes how I see most things, usually more than I notice at the time.
+Born in the UK with **Lebanese and Iraqi roots**, and raised somewhere between **English and
+Arabic**. That mix shapes how I see pretty much everything, usually more than I notice at the
+time.
 
-I've also had **type 1 diabetes** since I was one year old. I don't think of it as a
-defining thing, but it's quietly taught me a few habits: I'm comfortable making decisions
-on incomplete data, I trust the numbers over the vibe, and very little actually reads as an
-emergency. It's also part of why owning my own health data matters to me.
+And yes, the diabetic bit: I've had **type 1 diabetes** since I was one. It's not my whole
+personality (despite what the bio says), but it has quietly taught me a few habits: I'm
+comfortable making decisions on incomplete data, I trust the numbers over the vibe, and very
+little actually reads as an emergency. It's also why I'm slightly obsessive about owning my
+own health data.
 
-Outside of work, most of my time goes on running, reading, and an unreasonable amount of
-football.
+Outside of work it's mostly running, reading, and an unreasonable amount of football.
 
 {{< panels >}}
 
@@ -51,8 +52,6 @@ Change** (bell hooks) and **Pity the Nation** (Robert Fisk).
 
 {{< /panels >}}
 
-Want the day-to-day? Here's [what I'm focused on right now](/now), and [the gear and tools I use](/uses).
-
 ## A few true things about me
 
 - Unpopular opinion: football was better before the 2010s.
@@ -61,9 +60,9 @@ Want the day-to-day? Here's [what I'm focused on right now](/now), and [the gear
 
 ## Say hi
 
-This is where I write about tech, and whatever else I'm thinking about. If any of it
-resonates, or you just want to say hello, I'm easy to find:
+If anything here resonates, or you just want to tell me I'm wrong about football, I'm easy
+to find:
 
 {{< social >}}
 
-Thanks for stopping by. 🧡
+Thanks for stopping by 💚
