@@ -564,6 +564,15 @@ body.dark .theme-toggle .icon-moon { display: none; }
   display: none;
 }
 
+/* Social icons inside the home intro column: sit just under the clock */
+.intro .social-icons {
+  margin: 1.2rem 0 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+.intro .social-icons a { color: var(--content-primary); }
+.intro .social-icons a:hover { color: var(--accent); }
+
 /* ---- Live blood-sugar widget ---- */
 .bg-widget {
   display: flex;

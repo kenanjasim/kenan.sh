@@ -34,13 +34,14 @@
         {{ end }}
 
         <p class="london-time" id="london-time"></p>
+
+        {{/* Social icons sit in the text column, lined up with the intro */}}
+        {{ partial "social-icons.html" . }}
     </div>
 </div>
-{{ end }}
-
-{{/* Social Icons */}}
-
+{{ else }}
 {{ partial "social-icons.html" . }}
+{{ end }}
 
 {{/* Collection Section */}}
 
