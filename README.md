@@ -21,3 +21,8 @@ domain `kenan.sh` is set in the repository's Pages settings, with DNS on Cloudfl
 
 Until September 2026 this site lived at kenanjasim.com. Old URLs are 301-redirected to the same
 path on kenan.sh by a Cloudflare Redirect Rule on the kenanjasim.com zone.
+
+## Credits
+
+The favicon is the "green heart" emoji from [Twemoji](https://github.com/jdecked/twemoji),
+licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
