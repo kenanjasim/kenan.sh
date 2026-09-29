@@ -40,6 +40,7 @@ moment. For my work and CV, head to [kenanjasim.com](https://kenanjasim.com/).
 - 🎧 **Music:** pop, hip-hop and Arabic music. Fairuz, Kazdoura, Olivia Rodrigo, Little Simz, *brat*, *Madvillainy*
 - 📚 **Reading:** mostly politics and history. *Between Two Rivers*, *Pity the Nation*, *The Will to Change*
 - ⚽ **Football:** Manchester United fan, for my sins. Still convinced it was better before the 2010s
+- 🎱 **Snooker**
 - 📷 **Photography:** photos coming soon
 {{< /facts >}}
 
