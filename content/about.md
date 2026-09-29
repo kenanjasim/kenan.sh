@@ -30,7 +30,7 @@ moment. For my work and CV, head to [kenanjasim.com](https://kenanjasim.com/).
 - 🗣️ **English & Arabic**
 - 💚 **Type 1 diabetic** since I was one
 - 🎓 **Electronic engineering** at King's
-- 🙋 **he/him**
+- 🍲 **Volunteer** at [Sufra](https://www.sufra-nwlondon.org.uk/)'s community kitchen
 {{< /facts >}}
 
 ### Things I'm into
