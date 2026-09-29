@@ -2,6 +2,8 @@
 title = 'About'
 summary = 'The human behind the overthinking.'
 hidePagination = true
+# /now and /uses are unpublished; send any old links here instead
+aliases = ['/now/', '/uses/']
 +++
 
 <div class="about-hero">
@@ -17,21 +19,22 @@ Tenderness and kindness are not signs of weakness and despair, but manifestation
 <cite>— Kahlil Gibran</cite>
 </blockquote>
 
-**كنان جاسم** — /kiːˈnæn ˈd͡ʒaːsim/. Engineer, but make it diabetic. I got here sideways: I
-studied **electronic engineering** at King's College London, then slowly realised the only
-bit I actually enjoyed was the software. A few years on, that's the whole job.
+**كنان جاسم** — /kiːˈnæn ˈd͡ʒaːsim/. Software engineer in London, overthinker by default, football
+bore by choice. The grown-up version of me lives at [kenanjasim.com](https://kenanjasim.com/);
+this is everything else.
 
-Born in the UK with **Lebanese and Iraqi roots**, and raised somewhere between **English and
-Arabic**. That mix shapes how I see pretty much everything, usually more than I notice at the
-time.
+## The short version
 
-And yes, the diabetic bit: I've had **type 1 diabetes** since I was one. It's not my whole
-personality (despite what the bio says), but it has quietly taught me a few habits: I'm
-comfortable making decisions on incomplete data, I trust the numbers over the vibe, and very
-little actually reads as an emergency. It's also why I'm slightly obsessive about owning my
-own health data.
+{{< facts >}}
+- 📍 **London**, UK-born
+- 🌍 **Lebanese & Iraqi** roots
+- 🗣️ **English & Arabic**
+- 💚 **Type 1 diabetic** since I was one
+- 🎓 **Electronic engineering** at King's
+- ✈️ **{{< travelcount >}} countries** so far, [see the map](/travel)
+{{< /facts >}}
 
-Outside of work it's mostly running, reading, and an unreasonable amount of football.
+## Lately
 
 {{< panels >}}
 
@@ -52,11 +55,11 @@ Change** (bell hooks) and **Pity the Nation** (Robert Fisk).
 
 {{< /panels >}}
 
-## A few true things about me
+## Hot takes
 
-- Unpopular opinion: football was better before the 2010s.
-- I'll happily talk your ear off about almost anything *except* tech — politics, history,
-  trains, whatever I'm reading, music, TV, and football.
+- Football was better before the 2010s. I will not be taking questions.
+- I'll happily talk your ear off about almost anything *except* tech: politics, history,
+  trains, whatever I'm reading, music, TV, and (obviously) football.
 
 ## Say hi
 

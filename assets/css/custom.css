@@ -337,6 +337,28 @@ body.dark .theme-toggle .icon-moon { display: none; }
 .panel-body p:last-child { margin-bottom: 0; }
 .panel-body a { color: var(--accent); }
 
+/* ---- Quick facts grid on the About page (`facts` shortcode) ---- */
+.facts ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+}
+.facts li {
+  margin: 0;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--code-border);
+  border-radius: 10px;
+  background: var(--code-background);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--content-secondary);
+}
+.facts li strong { color: var(--content-primary); }
+.facts li a { color: var(--accent); }
+
 /* ---- Travel map ---- */
 .travel-map {
   width: 100%;

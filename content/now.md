@@ -1,4 +1,6 @@
 +++
+# Unpublished (not kept up to date); /now/ redirects to /about/
+draft = true
 title = 'Now'
 description = "What I'm focused on at the moment."
 hidePagination = true

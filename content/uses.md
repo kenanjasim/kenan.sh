@@ -1,4 +1,6 @@
 +++
+# Unpublished (not kept up to date); /uses/ redirects to /about/
+draft = true
 title = 'Uses'
 description = 'The gear, software, and tools I use day to day.'
 hidePagination = true
