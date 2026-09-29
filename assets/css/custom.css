@@ -564,14 +564,19 @@ body.dark .theme-toggle .icon-moon { display: none; }
   display: none;
 }
 
-/* Social icons inside the home intro column: sit just under the clock */
-.intro .social-icons {
-  margin: 1.2rem 0 0;
+/* Social icons under the home profile card */
+.profile-card .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.6rem;
+  margin: 0.9rem 0 0;
   padding: 0;
-  justify-content: flex-start;
 }
-.intro .social-icons a { color: var(--content-primary); }
-.intro .social-icons a:hover { color: var(--accent); }
+.profile-card .social-icons a:not(:last-of-type) { margin-inline-end: 0; }
+.profile-card .social-icons a { color: var(--content-primary); }
+.profile-card .social-icons svg { width: 18px; height: 18px; }
+.profile-card .social-icons a:hover { color: var(--accent); }
 
 /* ---- Live blood-sugar widget ---- */
 .bg-widget {

@@ -16,6 +16,8 @@
         {{ with site.Params.profileName }}<p class="profile-name">{{ . }}</p>{{ end }}
         {{ with site.Params.profileRole }}<p class="profile-role">{{ . | safeHTML }}</p>{{ end }}
         {{ with site.Params.profileMeta }}<p class="profile-meta">{{ . }}</p>{{ end }}
+        {{/* Social icons fill the space under the profile card */}}
+        {{ partial "social-icons.html" . }}
         {{ with site.Params.profileTags }}
         <div class="profile-tags">
             {{ range . }}<span class="profile-tag">{{ . }}</span>{{ end }}
@@ -35,8 +37,6 @@
 
         <p class="london-time" id="london-time"></p>
 
-        {{/* Social icons sit in the text column, lined up with the intro */}}
-        {{ partial "social-icons.html" . }}
     </div>
 </div>
 {{ else }}
