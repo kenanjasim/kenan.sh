@@ -1,4 +1,4 @@
-baseURL = 'https://kenanjasim.com/'
+baseURL = 'https://kenan.sh/'
 locale = 'en-gb'
 title = 'Kenan Jasim'
 theme = "typo"
@@ -47,7 +47,7 @@ homeIntroTitle = 'Hello! 👋'
 homeIntroContent = """
 I'm a software engineer with a background in electronic engineering.
 
-[Check out the about page](/about) to learn more about me, take a look at my [CV](https://kenanjasim.github.io/cv/cv.pdf), or scroll down for the things I've written. 
+[Check out the about page](/about) to learn more about me, take a look at my [work and CV](https://kenanjasim.com/), or scroll down for the things I've written. 
 Thanks for stopping by 💚
 """
 
@@ -104,6 +104,11 @@ url = "/about"
 [[params.menu]]
 name = "travel"
 url = "/travel"
+
+# Portfolio / CV lives on its own site
+[[params.menu]]
+name = "work"
+url = "https://kenanjasim.com/"
 
 # Image processing quality (avatars etc.)
 [imaging]
