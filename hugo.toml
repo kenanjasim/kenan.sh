@@ -82,7 +82,7 @@ url = "https://www.strava.com/athletes/97755215"
 
 [[params.social]]
 name = "email"
-url = "mailto:kenan@kenanjasim.com"
+url = "mailto:me@kenan.sh"
 
 [[params.social]]
 name = "rss"
