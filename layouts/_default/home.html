@@ -30,7 +30,7 @@
         {{ end }}
 
         {{ with .Site.Params.homeIntroContent }}
-        <p>{{ . | markdownify }}</p>
+        {{ $.RenderString (dict "display" "block") . }}
         {{ end }}
 
         <p class="london-time" id="london-time"></p>
