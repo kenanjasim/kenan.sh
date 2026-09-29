@@ -19,11 +19,10 @@ Tenderness and kindness are not signs of weakness and despair, but manifestation
 <cite>— Kahlil Gibran</cite>
 </blockquote>
 
-**كنان جاسم** — /kiːˈnæn ˈd͡ʒaːsim/. Software engineer in London, overthinker by default, football
-bore by choice. The grown-up version of me lives at [kenanjasim.com](https://kenanjasim.com/);
-this is everything else.
+I'm a software engineer living in London. This is where I write about whatever I'm into at the
+moment. For my work and CV, head to [kenanjasim.com](https://kenanjasim.com/).
 
-## The short version
+## Quick facts
 
 {{< facts >}}
 - 📍 **London**, UK-born
@@ -55,11 +54,11 @@ Change** (bell hooks) and **Pity the Nation** (Robert Fisk).
 
 {{< /panels >}}
 
-## Hot takes
+## A few true things about me
 
-- Football was better before the 2010s. I will not be taking questions.
+- Unpopular opinion: football was better before the 2010s.
 - I'll happily talk your ear off about almost anything *except* tech: politics, history,
-  trains, whatever I'm reading, music, TV, and (obviously) football.
+  trains, whatever I'm reading, music, TV, and football.
 
 ## Say hi
 
