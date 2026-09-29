@@ -1,4 +1,4 @@
 {{/* Quick-facts grid on the About page: wraps a markdown list */}}
-<div class="facts">
+<div class="facts{{ with .Get "class" }} {{ . }}{{ end }}">
 {{ .Inner | .Page.RenderString (dict "display" "block") }}
 </div>

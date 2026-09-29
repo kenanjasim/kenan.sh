@@ -359,6 +359,16 @@ body.dark .theme-toggle .icon-moon { display: none; }
 .facts li strong { color: var(--content-primary); }
 .facts li a { color: var(--accent); }
 
+/* "Lately" sits right under the quick facts: tighter heading, three wider cards */
+.single-content h2 + .facts ul { margin-bottom: 1.2rem; }
+.single-content h3:has(+ .facts-lately) {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  color: var(--content-secondary);
+}
+.facts-lately ul { grid-template-columns: 1fr; gap: 0.45rem; }
+.facts-lately li { padding: 0.5rem 0.9rem; }
+
 /* ---- Travel map ---- */
 .travel-map {
   width: 100%;

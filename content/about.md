@@ -33,26 +33,13 @@ moment. For my work and CV, head to [kenanjasim.com](https://kenanjasim.com/).
 - ✈️ **{{< travelcount >}} countries** so far, [see the map](/travel)
 {{< /facts >}}
 
-## Lately
+### Things I'm into
 
-{{< panels >}}
-
-{{< panel emoji="🏃" title="On my feet" >}}
-I run to think. Right now I'm chipping away at my first continuous 5k.
-[See what I'm up to on Strava →](https://www.strava.com/athletes/97755215)
-{{< /panel >}}
-
-{{< panel emoji="🎧" title="On repeat" >}}
-Right now: a lot of **Olivia Rodrigo**. My all-time rotation is **brat** (Charli xcx),
-**Madvillainy** (Madvillain), and **Sometimes I Might Be Introvert** (Little Simz).
-{{< /panel >}}
-
-{{< panel emoji="📚" title="On my shelf" >}}
-Currently reading **Between Two Rivers**. Two that have stuck with me: **The Will to
-Change** (bell hooks) and **Pity the Nation** (Robert Fisk).
-{{< /panel >}}
-
-{{< /panels >}}
+{{< facts class="facts-lately" >}}
+- 🏃 **Running:** working up to my first continuous 5k, [on Strava](https://www.strava.com/athletes/97755215)
+- 🎧 **Music:** pop, hip-hop and Arabic music. Fairuz, Kazdoura, Olivia Rodrigo, Little Simz, *brat*, *Madvillainy*
+- 📚 **Reading:** mostly politics and history. *Between Two Rivers*, *Pity the Nation*, *The Will to Change*
+{{< /facts >}}
 
 ## A few true things about me
 
