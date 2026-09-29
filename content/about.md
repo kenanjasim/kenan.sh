@@ -39,6 +39,7 @@ moment. For my work and CV, head to [kenanjasim.com](https://kenanjasim.com/).
 - 🏃 **Running:** working up to my first continuous 5k, [on Strava](https://www.strava.com/athletes/97755215)
 - 🎧 **Music:** pop, hip-hop and Arabic music. Fairuz, Kazdoura, Olivia Rodrigo, Little Simz, *brat*, *Madvillainy*
 - 📚 **Reading:** mostly politics and history. *Between Two Rivers*, *Pity the Nation*, *The Will to Change*
+- ⚽ **Football:** watching and talking about an unreasonable amount of it
 {{< /facts >}}
 
 ## A few true things about me

@@ -366,7 +366,7 @@ body.dark .theme-toggle .icon-moon { display: none; }
   font-size: 1rem;
   color: var(--content-secondary);
 }
-.facts-lately ul { grid-template-columns: repeat(3, 1fr); }
+.facts-lately ul { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 640px) {
   .facts-lately ul { grid-template-columns: 1fr; }
 }
