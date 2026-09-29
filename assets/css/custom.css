@@ -367,6 +367,8 @@ body.dark .theme-toggle .icon-moon { display: none; }
   color: var(--content-secondary);
 }
 .facts-lately ul { grid-template-columns: repeat(2, 1fr); }
+/* an odd card out spans the full row instead of sitting alone */
+.facts-lately li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 @media (max-width: 640px) {
   .facts-lately ul { grid-template-columns: 1fr; }
 }
