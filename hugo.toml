@@ -46,8 +46,6 @@ nightscoutUrl = 'https://nightscout.kenanjasim.com'
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hello! 👋'
 homeIntroContent = """
-💚 empathy · nerd · overthinker
-
 This is where I write down the things I've been overthinking, in the hope that it makes me
 stop.
 
