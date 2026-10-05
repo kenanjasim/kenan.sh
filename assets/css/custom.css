@@ -389,12 +389,20 @@ body.dark .theme-toggle .icon-moon { display: none; }
   background: var(--accent);
   border-radius: 4px;
 }
-/* jsvectormap positions its tooltip from the cursor's viewport (client) coordinates, but its own
-   CSS makes it position:absolute, so once the page is scrolled the tooltip lands in the wrong
-   place and jumps around. Fixed positioning matches the coordinates it uses. */
-.jvm-tooltip {
-  position: fixed !important;
+/* jsvectormap's tooltip is appended to <body> and only positioned on mousemove, so it starts
+   off-screen (otherwise it shows at the end of the page, by the footer, until the mouse moves).
+   The show handler in the travelmap shortcode places it at the cursor straight away. */
+body .jvm-tooltip {  /* body prefix: beats jsvectormap.css, which loads after this file */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
   pointer-events: none;
+  background: var(--accent);
+  color: var(--background);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
 }
 .travel-list {
   list-style: none;

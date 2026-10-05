@@ -49,6 +49,16 @@
       zoomButtons: true,
       zoomOnScroll: false,
       backgroundColor: 'transparent',
+      // The library only positions the tooltip on mousemove. When a region appears under a still
+      // cursor (e.g. while scrolling) it gets a mouseover but no mousemove, so place it here too.
+      onRegionTooltipShow: function (event, tooltip) {
+        var el = tooltip.getElement();
+        var rect = el.getBoundingClientRect();
+        tooltip.css({
+          top: (event.pageY - rect.height - 8) + 'px',
+          left: (event.pageX - rect.width / 2) + 'px'
+        });
+      },
       // Visited countries are "selected" regions so the library keeps their colour when it
       // redraws (e.g. on resize); painting them by hand was lost on small screens.
       regionsSelectable: false,
