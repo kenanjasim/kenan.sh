@@ -68,7 +68,7 @@ breadcrumbs = true
 # Social icons
 [[params.social]]
 name = "bluesky"
-url = "https://bsky.app/profile/kenanjasim.bsky.social"
+url = "https://bsky.app/profile/kenan.sh"
 
 [[params.social]]
 name = "linkedin"
